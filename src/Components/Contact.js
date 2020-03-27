@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 class Contact extends Component {
   render() {
@@ -11,7 +13,34 @@ class Contact extends Component {
       var phone = this.props.data.phone;
       var email = this.props.data.email;
       var message = this.props.data.contactmessage;
-    }
+		}
+		
+		const openSignupAlert = () => {
+			const MySwal = withReactContent(Swal)
+			MySwal.fire({	
+				showCancelButton: false,
+				showConfirmButton: false,
+				html:				
+			<div>
+				<h3>Awesome. Do you have a team or are you a solo hacker?</h3>
+				<button 
+					onClick={() => {
+						window.open('https://hackathontlv.typeform.com/to/J18pas')
+						MySwal.close()
+					}} style={{width: '100%'}}>
+					Solo
+				</button>
+				<button 
+					onClick={() => {
+						window.open('https://hackathontlv.typeform.com/to/gWzpP7')
+						MySwal.close()
+					}} style={{width: '100%'}}>
+					With a team
+				</button>
+			</div>}).then(() => {
+				
+			})
+		}
 
     return (
       <section id="contact">
@@ -22,9 +51,10 @@ class Contact extends Component {
 							marginRight: 20
 						}}>
 						<button 
-						onClick={() => {
-							window.open('https://artium1.typeform.com/to/K1VYfu')
-						}} style={{width: '100%'}}>
+							onClick={() => {
+								openSignupAlert()
+								//window.open('https://artium1.typeform.com/to/K1VYfu')
+							}} style={{width: '100%'}}>
 							Join totay!
 						</button>
 					</div>

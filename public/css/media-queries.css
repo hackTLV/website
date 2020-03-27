@@ -234,6 +234,7 @@
    #organizers h1 { letter-spacing: 3px; }
    #organizers .main-col { padding-right: 30px; }
    #organizers h3, #organizers .info { text-align: center; }
+   #organizers .organizer_desc { text-align: center; }
       
    .bars { width: 100%; }
 

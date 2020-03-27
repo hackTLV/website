@@ -48,7 +48,7 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#organizers">
-							organizers
+                organizers
               </a>
             </li>
             <li>
@@ -72,89 +72,90 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">{name}.</h1>
-            <h3 style={{ color: "white" }}>
-              The best fu**ing hackthon in town.
-            </h3>
+            <h3 style={{ color: "white" }}>{description}</h3>
             {/* <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3> */}
             <hr />
             <Countdown
               renderer={({ days, hours, minutes, seconds, completed }) => {
-								
+                if (completed) {
+                  return (
+                    <div
+                      stlye={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
 
-								if (completed) {
-									return (
-										<div stlye={{
-											display: 'flex',
-											justifyContent: 'center',
-											alignItems: 'center',
-										}}>  
-
-										<div style={{
-											display: 'flex',
-											justifyContent: 'center',
-											alignItems: 'center',
-											
-											padding: 20,
-											borderRadius: 20,
-										}}>
-											<h1 style={{}}>
-												The hackthon was started! See you all there! (:
-											</h1>
-										</div>
-										</div>
-									)
-								}
-								return (
-                <div style={{
-									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center'
-								}}>
+                          padding: 20,
+                          borderRadius: 20
+                        }}
+                      >
+                        <h1 style={{}}>
+                          The hackthon was started! See you all there! (:
+                        </h1>
+                      </div>
+                    </div>
+                  );
+                }
+                return (
                   <div
                     style={{
-                      flexDirection: "row",
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "center",
-                      alignSelf: "center",
-                      
+                      alignItems: "center"
                     }}
                   >
-                    <h1
+                    <div
                       style={{
-                        //fontSize: 40,
-                        color: "white",
+                        flexDirection: "row",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        alignSelf: "center"
                       }}
                     >
-                      {days}:
-                    </h1>
-                    <h1
-                      style={{
-                        //fontSize: 40,
-                        color: "white",
-                      }}
-                    >
-                      {hours}:
-                    </h1>
-                    <h1
-                      style={{
-                        //fontSize: 40,
-                        color: "white",
-                      }}
-                    >
-                      {minutes}:
-                    </h1>
-                    <h1
-                      style={{
-                        //fontSize: 40,
-                        color: "white",
-                      }}
-                    >
-                      {seconds}
-                    </h1>
+                      <h1
+                        style={{
+                          //fontSize: 40,
+                          color: "white"
+                        }}
+                      >
+                        {days}:
+                      </h1>
+                      <h1
+                        style={{
+                          //fontSize: 40,
+                          color: "white"
+                        }}
+                      >
+                        {hours}:
+                      </h1>
+                      <h1
+                        style={{
+                          //fontSize: 40,
+                          color: "white"
+                        }}
+                      >
+                        {minutes}:
+                      </h1>
+                      <h1
+                        style={{
+                          //fontSize: 40,
+                          color: "white"
+                        }}
+                      >
+                        {seconds}
+                      </h1>
+                    </div>
                   </div>
-                </div>
-              )}}
+                );
+              }}
               date={"06/12/2020"}
             />
             <ul className="social">{networks}</ul>

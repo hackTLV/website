@@ -10,6 +10,7 @@ import Contact from './Components/Contact';
 import OurStory from './Components/OurStory';
 import Portfolio from './Components/Portfolio';
 
+
 class App extends Component {
 
   constructor(props){
@@ -41,7 +42,9 @@ class App extends Component {
 
   componentDidMount(){
     this.getResumeData();
-  }
+	}
+	
+
 	
   render() {
 		console.log(this.state.resumeData)
@@ -50,7 +53,7 @@ class App extends Component {
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.prizes}/>
+        <Portfolio isPrizes data={this.state.resumeData.prizes}/>
         <OurStory data={this.state.resumeData.ourStory}/>
         <Portfolio data={this.state.resumeData.sponsors}/>
         <Contact data={this.state.resumeData.main}/>

@@ -16,7 +16,7 @@ class Resume extends Component {
               {organizer.occupation} <span>&bull;</span>
               <em className="date">since {organizer.period}</em>
             </p>
-            <p>{organizer.description}</p>
+						<p className="organizer_desc">{organizer.description}</p>
           </div>
         );
       });

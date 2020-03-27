@@ -5,6 +5,7 @@ class Portfolio extends Component {
 
     if(this.props.data){
 			var title = this.props.data.title
+			var isPrizes = this.props.isPrizes
       var objects = this.props.data.objects.map(function(objects){
         var objectImage = 'images/portfolio/'+objects.image;
         return <div key={objects.title} className="columns portfolio-item">
@@ -18,10 +19,12 @@ class Portfolio extends Component {
 							}}>
 							 <img
 							 	style={{
-									 height: 120,
-									 width: '100%',
-									objectFit: 'contain',
-									backgroundColor: '#ebeeee'
+									height: 200,
+									width: '100%',
+									objectFit:isPrizes ? 'cover' : 'cover',
+									backgroundColor: '#ebeeee',
+									borderRadius: 20,
+									padding:10
 								 }}
 								 alt={objects.title} src={objectImage} />
 							</div>
