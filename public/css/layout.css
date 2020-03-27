@@ -22,7 +22,10 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { 
+	background: #0f0f0f; 
+	font-family: 'Baloo Bhai 2' !important
+ }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -33,7 +36,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header_bg.jpeg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -209,7 +212,8 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
    width: 120px;
    height: 120px;
-   border-radius: 100%;
+	 border-radius: 100%;
+	 object-fit: cover;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -235,48 +239,48 @@ ul#nav li.current a { color: #F06000; }
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#organizers {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#organizers a, #organizers a:visited  { color: #11ABB0; }
+#organizers a:hover, #organizers a:focus { color: #313131; }
 
-#resume h1 {
+#organizers h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#organizers h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#resume h3 {
+#organizers h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#organizers .header-col { padding-top: 9px; }
+#organizers .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#organizers .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#organizers .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#organizers .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -436,7 +440,6 @@ ul#nav li.current a { color: #F06000; }
    background: #fff;
    overflow: hidden;
    position: relative;
-
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -495,6 +498,7 @@ ul#nav li.current a { color: #F06000; }
    vertical-align: bottom;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
+
 .portfolio-item .portfolio-item-meta h5 {
    font: 14px/21px 'opensans-bold', sans-serif;
    color: #fff;
@@ -505,6 +509,9 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 0;
 }
 
+.counter {
+	filter: blur(1.5rem);
+}
 /* on hover */
 .portfolio-item:hover .overlay {
 	opacity: 1;
@@ -636,7 +643,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif;
+	font-family: 'Baloo Bhai 2' !important;
 	color: #D8D8D8;
 }
 
@@ -687,7 +694,7 @@ call-to-action .button {
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
+	font-family: 'Baloo Bhai 2' !important;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
