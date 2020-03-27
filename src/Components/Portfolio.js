@@ -26,7 +26,7 @@ class Portfolio extends Component {
 								 alt={objects.title} src={objectImage} />
 							</div>
                {/* <div className="overlay">
-                  <div className="portfolio-item-meta">
+                  <div className="prizes-item-meta">
                  <h5>{objects.title}</h5>
                      <p>{objects.category}</p>
                   </div>
@@ -39,11 +39,11 @@ class Portfolio extends Component {
     }
 
     return (
-      <section id="portfolio">
+      <section id="prizes">
 				<div className="row">
 					<div className="twelve columns collapsed">
 						<h1>{title}</h1>
-							<div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
+							<div id="prizes-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
 									{objects}
 							</div>
 						</div>
