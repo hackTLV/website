@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 
-class Testimonials extends Component {
+class OurStory extends Component {
   render() {
 
     if(this.props.data){
-      var testimonials = this.props.data.testimonials.map(function(testimonials){
-        return  <li key={testimonials.user}>
+      var our_story = this.props.data.our_story.map(function(our_story){
+				console.log('our_story: ', our_story)
+        return  <li key={our_story.user}>
             <blockquote>
-               <p>{testimonials.text}</p>
-               <cite>{testimonials.user}</cite>
+               <p>{our_story.text}</p>
+               <cite>{our_story.user}</cite>
             </blockquote>
          </li>
       })
     }
 
     return (
-      <section id="testimonials">
+      <section id="our_story">
       <div className="text-container">
          <div className="row">
 
             <div className="two columns header-col">
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span>Client our_story</span></h1>
             </div>
 
             <div className="ten columns flex-container">
                   <ul className="slides">
-                      {testimonials}
+                      {our_story}
                   </ul>
                </div>
             </div>
@@ -35,4 +36,4 @@ class Testimonials extends Component {
   }
 }
 
-export default Testimonials;
+export default OurStory;
