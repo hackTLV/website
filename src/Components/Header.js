@@ -71,10 +71,12 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">{name}.</h1>
-            <h3 style={{ color: "white" }}>{description}</h3>
+            <h1 className="responsive-headline">{name}</h1>
+            <h3>{description}</h3>
             {/* <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3> */}
-            <hr />
+						<div style={{
+							marginTop: 200
+						}}>
             <Countdown
               renderer={({ days, hours, minutes, seconds, completed }) => {
                 if (completed) {
@@ -83,7 +85,8 @@ class Header extends Component {
                       stlye={{
                         display: "flex",
                         justifyContent: "center",
-                        alignItems: "center"
+												alignItems: "center",
+												
                       }}
                     >
                       <div
@@ -158,6 +161,7 @@ class Header extends Component {
               }}
               date={"06/12/2020"}
             />
+						</div>
             <ul className="social">{networks}</ul>
           </div>
         </div>
