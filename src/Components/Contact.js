@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import ReactGA from 'react-ga';
 
 class Contact extends Component {
   render() {
@@ -26,6 +27,11 @@ class Contact extends Component {
 				<button 
 					onClick={() => {
 						window.open('https://hackathontlv.typeform.com/to/J18pas')
+						ReactGA.event({
+							category: 'conversion',
+							action: 'registration',
+							label: 'register_solo'
+						});
 						MySwal.close()
 					}} style={{width: '100%'}}>
 					Solo
@@ -33,6 +39,11 @@ class Contact extends Component {
 				<button 
 					onClick={() => {
 						window.open('https://hackathontlv.typeform.com/to/gWzpP7')
+						ReactGA.event({
+							category: 'conversion',
+							action: 'registration',
+							label: 'register_team'
+						});
 						MySwal.close()
 					}} style={{width: '100%'}}>
 					With a team

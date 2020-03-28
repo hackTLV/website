@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
@@ -9,6 +8,7 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import OurStory from './Components/OurStory';
 import Portfolio from './Components/Portfolio';
+import ReactGA from 'react-ga';
 
 
 class App extends Component {
@@ -19,10 +19,7 @@ class App extends Component {
       foo: 'bar',
       resumeData: {}
     };
-
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
-
+		ReactGA.initialize('UA-162082849-1');
   }
 
   getResumeData(){
