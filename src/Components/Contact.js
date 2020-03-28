@@ -27,6 +27,7 @@ class Contact extends Component {
 				<button 
 					onClick={() => {
 						window.open('https://hackathontlv.typeform.com/to/J18pas')
+						window.location.href = '/thanks.html'
 						ReactGA.event({
 							category: 'conversion',
 							action: 'registration',
@@ -39,6 +40,7 @@ class Contact extends Component {
 				<button 
 					onClick={() => {
 						window.open('https://hackathontlv.typeform.com/to/gWzpP7')
+						window.location.href = '/thanks.html'
 						ReactGA.event({
 							category: 'conversion',
 							action: 'registration',
