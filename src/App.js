@@ -19,7 +19,7 @@ class App extends Component {
       foo: 'bar',
       resumeData: {}
     };
-		ReactGA.initialize('UA-162082849-1');
+		//ReactGA.initialize('UA-162082849-1');
   }
 
   getResumeData(){
