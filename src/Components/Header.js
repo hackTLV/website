@@ -73,13 +73,13 @@ class Header extends Component {
           <div className="banner-text">
             <h1 className="responsive-headline">{name}</h1>
             <h3>{description}</h3>
-						<h1>13 June 2020</h1>
+						<h1>19 June 2020</h1>
             {/* <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3> */}
 						<div className="countdown_container" style={{
 							// marginTop: 200
 						}}>
             <Countdown
-							date={"06/13/2020"}
+							date={"06/19/2020"}
               renderer={({ days, hours, minutes, seconds, completed }) => {
                 if (completed) {
                   return (
