@@ -20,27 +20,32 @@
       {
         "name":"facebook",
         "url":"https://www.facebook.com/Hacktlv-106788887638811/",
-        "className":"fa fa-facebook"
+        "className":"fab fa-facebook"
+			},
+			{
+        "name":"medium",
+        "url":"https://medium.com/@hackathontlv",
+        "className":"fab fa-medium"
       },
       {
         "name":"twitter",
         "url":"https://twitter.com/hackTLV",
-        "className":"fa fa-twitter"
+        "className":"fab fa-twitter"
       },
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/company/hacktlv",
-        "className":"fa fa-linkedin"
+        "className":"fab fa-linkedin"
       },
       {
         "name":"instagram",
         "url":"https://www.instagram.com/_hackTLV/",
-        "className":"fa fa-instagram"
+        "className":"fab fa-instagram"
       },
       {
         "name":"github",
         "url":"https://github.com/hackTLV",
-        "className":"fa fa-github"
+        "className":"fab fa-github"
       }
     ]
   },
